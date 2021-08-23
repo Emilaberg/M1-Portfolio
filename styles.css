@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+/* .home img{
+    max-width: 100%;
+    z-index: -1;
+    
+} */
+
+/* .front-name{
+    position: absolute;
+    color: #fffafa;
+    left: 45%;
+    bottom: 50%;
+    font-size: 2em;
+} */
+
+/* .main-title{
+    text-align: center;
+    
+    color: #fffafa;
+    
+} */
+
+.home{
+    text-align: center;
+    color: #fffafa;
+}
+nav div{
+    
+    list-style-type: none;
+    
+}
+
+nav div a{
+    display: inline-block;
+    margin: 20px 40px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    color: #565c5e;
+    font-family: 'Libre Baskerville', serif; 
+
+}
+
+.navbar-left{
+    float:right;
+}
+
+
+
+.bg-img{
+    background-image: url("img/home-img.jpg");
+
+    height: 100vh;
+    /* min-height: 600px; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.about-me{
+    margin-top:1200px;
+}
+
+/*pseudo classes*/
+
+.navbar-left a:hover{
+    text-decoration: underline;
+}
