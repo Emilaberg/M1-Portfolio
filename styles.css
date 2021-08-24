@@ -1,76 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;   
-}
-/* .home img{
-    max-width: 100%;
-    z-index: -1;
-    
-} */
-
-/* .front-name{
-    position: absolute;
-    color: #fffafa;
-    left: 45%;
-    bottom: 50%;
-    font-size: 2em;
-} */
-
-/* .main-title{
-    text-align: center;
-    
-    color: #fffafa;
-    
-} */
-
-.home{
-    text-align: center;
-    color: #fffafa;
-}
-nav div{
-    
-    list-style-type: none;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav div a{
-    display: inline-block;
-    margin: 20px 40px;
-    padding: 10px;
-    text-decoration: none;
-    font-size: large;
-    color: #565c5e;
-    font-family: 'Libre Baskerville', serif; 
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #dfd8d8;
 }
 
-.navbar-left{
-    float:right;
+/* Front page-->about page */
+h1,h3 {
+  font-weight: normal;
 }
 
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffafa;
+}
+.front-name {
+  text-align: center;
+}
+.front-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.front-sub h3 {
+  padding: 6px;
+}
 
-.bg-img{
-    background-image: url("img/home-img.jpg");
+/* navigational bar */
+.container{
+    position: fixed;
+    width: 100%;
+}
+nav div {
+  list-style-type: none;
+}
 
-    height: 100vh;
-    /* min-height: 600px; */
+nav div a {
+  display: inline-block;
+  margin: 20px 40px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: large;
+  color: #565c5e;
+  font-family: "Libre Baskerville", serif;
+}
+
+.navbar-left {
+  float: right;
+}
+/* navigational bar */
+
+.bg-img {
+  background-image: url("img/home-img.jpg");
+
+  height: 100vh;
+  /* min-height: 600px; */
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
 }
 
-.about-me{
-    margin-top:1200px;
+/* About page css */
+.about-me {
+  margin: 150px 20% 0 20%;
+  text-align: center;
 }
+
+.about-me h1 {
+    font-size: 3em;
+    padding: 20px;
+    margin: 20px;    
+}
+
+.about-me article{
+    display: inline-block
+    
+}
+
+/* temporary */
+.about-me p{
+    padding: 10px;
+    border: 4px red dotted;
+}
+
+.about-me img{
+    padding: 10px;
+    border: 4px red dotted;
+    float: left;
+}
+/* temporary */
 
 /*pseudo classes*/
 
-.navbar-left a:hover{
-    text-decoration: underline;
+.navbar-left a:hover {
+  text-decoration: underline;
 }
