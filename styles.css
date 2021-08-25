@@ -1,9 +1,10 @@
+@import url('https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
 body {
   font-family: "Libre Baskerville", serif;
@@ -96,29 +97,101 @@ nav div a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    border: 4px #d4cece solid;
+    background-color: #ccc5c5;
+    border-radius: 33px;
 }
 
 .about-row{
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    
     
 }
 .about-item{
-    background-color: red;
     margin: 10px;
+    padding: 20px;
     flex-basis: 100%;
 }
 
-.about-me h1 {
-  font-size: 4em;
-  padding: 20px;
-  margin: 20px;
+
+.about-item div p{
+  word-spacing: 20px;
+  
 }
 
-.about-me img{
-    float: left;
+.about-me h1 {
+  color: #565c5e;
+  display: inline-block;
+  font-size: 3em;
+  padding: 20px 40px 20px 40px;
+  margin: 20px;
+  border: 4px #d4cece solid;
+  border-radius: 18px;
+  background-color: #ccc5c5;
 }
+
+.about-item img{
+  border-radius: 10%;
+  box-shadow: 2px 2px 10px grey;
+}
+
+.about-item p{
+  color: #565c5e;
+  word-spacing: 10px;
+  font-size: 20px;
+
+}
+
+/* the experience page */
+.exp-page{
+  margin: 200px 16%;
+}
+
+.exp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px #d4cece solid;
+    background-color: #ccc5c5;
+    border-radius: 33px;
+}
+
+.exp-row{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.exp-item{
+  display: inline-block;
+  margin: 10px;
+  flex-basis: 100%;
+}
+
+.exp-page h1{
+  color: #565c5e;
+  display: inline-block;
+  font-size: 3em;
+  padding: 20px 40px 20px 40px;
+  margin: 20px;
+  border: 4px #d4cece solid;
+  border-radius: 18px;
+  background-color: #ccc5c5;
+  transition: padding 0.5s;
+}
+
+.exp-row div h2{
+  color: slateblue;
+}
+
+i{
+  
+  font-size: 40px;
+}
+
+
 
 /*pseudo classes*/
 
@@ -130,5 +203,14 @@ nav div a {
 .front-sub h3 a:hover{
     position: relative;
     bottom: 2px;
-
 }
+
+.about-item img:hover{
+  position: relative;
+  bottom: 5px;
+}
+
+.exp-page h1:hover{
+  padding: 20px 80px 20px 80px; 
+}
+
