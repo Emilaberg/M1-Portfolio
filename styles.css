@@ -39,7 +39,6 @@ main {
 .front-name {
   font-size: 4em;
   text-align: center;
-  
 }
 .front-sub {
   display: flex;
@@ -54,7 +53,6 @@ main {
   color: #dfdbd8;
   text-decoration: none;
   font-weight: lighter;
-  /* transition: color 1s; */
 }
 
 /* navigational bar */
@@ -82,14 +80,30 @@ nav div a {
 
 .navbar-left {
   float: right;
+  
 }
 /* navigational bar */
 
+/* burgermenu */
+.burgermenu {
+  position: absolute;
+  left: 92%;
+  bottom: 35%;
+  display: none;
+  width: 40px;
+  border-radius: 25%;
+  transition: background-color 400ms;
+}
+
+.burgerline {
+  margin: 4px;
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+}
 .bg-img {
   background-image: url("img/home-img.jpg");
 
   height: 100vh;
-  /* min-height: 600px; */
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -98,7 +112,7 @@ nav div a {
   border-bottom: #565c5e 3px solid;
 }
 
-.front-sub i{
+.front-sub i {
   color: #e2e8f0;
   padding: 10px 30px 10px 30px;
   font-size: 35px;
@@ -114,7 +128,6 @@ nav div a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px #edf27 solid; */
   background-color: #e4ecf5;
   border-radius: 33px;
   box-shadow: grey 2px 2px 10px;
@@ -126,8 +139,7 @@ nav div a {
   padding: 10px;
 }
 .about-item {
-  margin: 10px;
-  padding: 20px;
+  padding: 25px;
   flex-basis: 100%;
 }
 
@@ -141,33 +153,35 @@ nav div a {
   font-size: 3em;
   padding: 20px 40px 20px 40px;
   margin: 20px;
-  /* border: 4px #d4cece solid; */
   border-radius: 18px;
-  /* background-color: #ccc5c5; */
   box-shadow: 2px 2px 10px;
 }
 
 .about-item img {
   border-radius: 100%;
-  /* box-shadow: 2px 2px 10px grey; */
 }
 
 .about-item p {
   color: #565c5e;
-  word-spacing: 10px;
-  font-size: 20px;
+  word-spacing: 5px;
+  font-size: 16px;
+  padding: 2%;
+}
+
+.about-item h3 {
+  display: inline-block;
+  padding: 5px;
 }
 
 /* the experience page */
 .exp-page {
-  margin: 22% 16%;
+  margin: 20% 16%;
 }
 
 .exp-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 4px #d4cece solid; */
   background-color: #e4ecf5;
   border-radius: 33px;
   box-shadow: 2px 2px 10px gray;
@@ -191,10 +205,7 @@ nav div a {
   font-size: 3em;
   padding: 20px 40px 20px 40px;
   margin: 20px;
-  /* border: 4px #d4cece solid; */
   border-radius: 18px;
-  /* background-color: #ccc5c5; */
-  transition: padding 0.5s;
   box-shadow: 2px 2px 10px;
 }
 
@@ -214,7 +225,7 @@ i {
   margin: 10% 16%;
 }
 
-.pro-page h1{
+.pro-page h1 {
   color: #565c5e;
   display: inline-block;
   font-size: 3em;
@@ -222,47 +233,43 @@ i {
   margin: 20px;
   border-radius: 18px;
   box-shadow: 2px 2px 10px;
-  
 }
 
-.pro-container{
+.pro-container {
   display: flex;
   flex-direction: column;
-  /* border: 4px #d4cece solid; */
   background-color: #e4ecf5;
   border-radius: 33px;
   box-shadow: 2px 2px 10px;
 }
 
-.pro-row{
+.pro-row {
   display: flex;
   flex-direction: row;
   height: 200px;
   margin: 20px;
 }
 
-.pro-item{
+.pro-item {
   display: inline-block;
   flex-basis: 100%;
   margin: 10px;
 }
-.pro-container h2{
+.pro-container h2 {
   padding: 10px;
   font-weight: lighter;
-  
 }
 .pro-item img {
   height: 100px;
   width: 120px;
 }
 
-
 /* footer styling */
 
 footer {
   padding: 40px;
   background-color: #445d7c;
-  border-top:#565c5e 1px solid;
+  border-top: #565c5e 1px solid;
 }
 footer p {
   color: #e2e8f0;
@@ -280,10 +287,64 @@ footer p {
   bottom: 2px;
 }
 
-.front-sub h3 i:hover{
-    color: lightblue;
+.front-sub h3 i:hover {
+  color: lightblue;
 }
 
-.exp-page h1:hover {
-  padding: 20px 80px 20px 80px;
+.burgermenu:hover{
+  background-color: #597aa2;
+}
+
+
+
+/* Media queries */
+/* iphone and smaller */
+@media screen and (max-width: 1070px) { 
+  .navbar-left a {
+    margin: 10px 10px;
+    padding: 20px;
+    font-size: 18px; 
+  }
+}
+
+@media  screen and (max-width:899px) {
+  .navbar-left{
+    display: none;
+  }
+  .bg-img{
+    background-image: none;
+  }
+
+  .front-sub i{
+    color: #565c5e;
+  }
+
+ .about-container,.exp-container,.pro-container{
+   box-shadow: none;
+   border-radius: none;
+   background-color: #e2e8f0;
+ }
+
+  .about-row{
+    flex-direction: column;
+  }
+
+  .burgermenu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 1499px) {
+  .about-me {
+    margin: 10% 5%;
+  }
+
+  .exp-page {
+    margin: 22% 5%;
+  }
+  .pro-page {
+    white-space: nowrap;
+    margin: 10% 5%;
+  }
 }
