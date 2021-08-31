@@ -366,8 +366,8 @@ footer p {
   font-size: 80%;
 }
 .pro-item img{
-  height: fit-content;
-  width: 55%;
+  /* height: fit-content;
+  width: 55%; */
 }
   .about-row{
     flex-direction: column;
