@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <meta samesite=None>
     <!-- The website title -->
     <title>Portfolio</title>
   </head>
@@ -27,11 +28,13 @@
               <a href="./#Projects">Projects</a>
             </div>
             <!-- burgermenu -->
-            <div  class="burgermenu" id="dropdown-menu">
-              <hr class="burgerline">
-              <hr class="burgerline">
-              <hr class="burgerline">
-            </div>
+            <ul id="links">
+              <a href="./#home">Home</a>
+              <a href="./#about">About</a>
+              <a href="./#experience">Experience</a>
+              <a href="./#Projects">Projects</a>
+            </ul>
+            <a href="javasrcipt:void(0);" class="icon" onclick="myFunction()"><i class="fal fa-angle-down"></i></a>
           </div>
         </nav>
       </header>
@@ -156,6 +159,13 @@
   </body>
 
   <script>
-    
+    function myFunction(){
+      var x = document.getElementById("links");
+      if (x.style.display === "block"){
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
   </script>
 </html>
