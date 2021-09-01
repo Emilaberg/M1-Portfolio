@@ -64,6 +64,7 @@ main {
   z-index: 2;
   border-bottom: #565c5e 1px solid;
   box-shadow: 1px 1px 10px #565c5e;
+  text-shadow: 1px 1px black;
 }
 nav div {
   list-style-type: none;
@@ -90,9 +91,10 @@ nav div a {
   display: none;
   text-align: center;
   font-weight: lighter;
-  font-size: 2vw;
+  font-size: 4vw;
   margin: 0px;
-  padding: 20px
+  padding: 20px;
+  text-shadow: 1px 1px black;
 }
 
 .brand .icon{
@@ -409,9 +411,9 @@ footer p {
     z-index: 4;
     margin: 15px;
     padding: 1px 10px 1px 10px;
-    /* background-color: slategray; */
   }
 }
+
 @media screen and (max-width: 1499px) {
   .about-me {
     margin: 10% 5%;
