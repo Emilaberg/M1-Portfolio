@@ -360,7 +360,7 @@ footer p {
     box-shadow: none;
     border-radius: none;
     background-color: #e2e8f0;
-    border: 2px red dotted;
+    border: 2px #597aa2 solid;
   }
 
   .about-item img{
