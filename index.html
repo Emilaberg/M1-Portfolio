@@ -29,7 +29,7 @@
             </div>
             <!-- burgermenu -->
             <ul id="links">
-              <a href="./#home">Home</a>
+              <a href="./#home" id="_home">Home</a>
               <a href="./#about">About</a>
               <a href="./#experience">Experience</a>
               <a href="./#Projects">Projects</a>
@@ -167,5 +167,17 @@
         x.style.display = "block";
       }
     }
+
+    document.querySelectorAll("#links").forEach(item =>{
+      item.addEventListener("click", event =>{
+        close();
+      })
+    })
+    function close(){
+      var x = document.getElementById("links");
+      x.style.display = "none";
+      
+    }
+    
   </script>
 </html>
