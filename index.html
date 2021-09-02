@@ -12,7 +12,9 @@
     <!-- The website title -->
     <title>Portfolio</title>
   </head>
-  <body>
+  <body onload="close()">
+
+    
     <!-- the landing page containing navbar and front name, icons-->
     <article class="bg-img">
       <!-- The header containing the navbar -->
@@ -34,7 +36,7 @@
               <a href="./#experience">Experience</a>
               <a href="./#Projects">Projects</a>
             </ul>
-            <a href="#" class="icon" onclick="myFunction()"><i class="fal fa-angle-down"></i></a>
+            <a class="icon" onclick="myFunction()"><i class="fal fa-angle-down"></i></a>
           </div>
         </nav>
       </header>
@@ -50,13 +52,14 @@
           <h3><a href="https://www.facebook.com/emil.aberg.71" target="_blank"><i class="fab fa-facebook-square"></i></a></h3>
           <h3><a href="https://github.com/Emilaberg" target="_blank"><i class="fab fa-github-square"></i></a></h3>
         </div>
+        
       </section>
     </article>
 <!-- The whole main site -->
     <main>
       <!--the about page-->
-      <section id="about" class="about-me">
-        <h1>About me</h1>
+      <section class="about-me">
+        <h1 >About me <span id="about"></span></h1>
 <!-- The about me div page -->
         <div class="about-container">
           <div class="about-row">
@@ -94,14 +97,15 @@
                  I hope that I can get my internship abroad so I can connect with other people and gain unique experience. 
                  Next year I also want to attend a bartender course in new york, because of my newly found 
               </p>
+              <b>Contact me at <em>emil.aberg@live.com</em></b>
             </div>
           </div>
         </div>
       </section>
 
       <!-- the experience page -->
-      <section id="experience" class="exp-page">
-        <h1>experience</h1>
+      <section class="exp-page">
+        <h1>experience <span id="experience"></span></h1>
 <!-- The experience div class -->
         <div class="exp-container">
           <!-- row1 -->
@@ -122,7 +126,7 @@
       </section>
 
       <!--the work page-->
-      <section id="Projects"class="pro-page">
+      <section id="Projects" class="pro-page">
         <h1>Projects</h1>
 <!-- Projects div class -->
         <div class="pro-container">
@@ -161,6 +165,7 @@
   <script>
     function myFunction(){
       var x = document.getElementById("links");
+      
       if (x.style.display === "block"){
         x.style.display = "none";
       } else {
@@ -172,12 +177,14 @@
       item.addEventListener("click", event =>{
         close();
       })
+
     })
     function close(){
       var x = document.getElementById("links");
       x.style.display = "none";
-      
     }
+
+
     
   </script>
 </html>
