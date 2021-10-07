@@ -285,8 +285,12 @@ i {
   font-weight: lighter;
 }
 .pro-item img {
-  height: 100px;
-  width: 120px;
+  height: 50%;
+  width: 50%;
+}
+
+.pro-item div img {
+  width: 50%;
 }
 
 /* footer styling */

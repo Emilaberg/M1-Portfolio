@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <meta samesite=None>
     <!-- The website title -->
     <title>Portfolio</title>
@@ -52,7 +53,6 @@
           <h3><a href="https://www.facebook.com/emil.aberg.71" target="_blank"><i class="fab fa-facebook-square"></i></a></h3>
           <h3><a href="https://github.com/Emilaberg" target="_blank"><i class="fab fa-github-square"></i></a></h3>
         </div>
-        
       </section>
     </article>
 <!-- The whole main site -->
@@ -132,7 +132,7 @@
         <div class="pro-container">
           <!-- div row   -->
           <div class="pro-row">
-            <div class="pro-item"><h2>Project 1</h2><img src="/img/test.png" alt="project picture"></div>
+            <div class="pro-item"><h2>Project 1</h2><div><a href="./project1.html"><img src="/img/ThrillaGame_Logo.png" alt="project picture" ></a></div></div>
             <div class="pro-item"><h2>Project 5</h2><img src="/img/test.png" alt="project picture"></div>
           </div>
 
@@ -150,8 +150,7 @@
             <div class="pro-item"><h2>Project 4</h2><img src="/img/test.png" alt="project picture"></div>
             <div class="pro-item"><h2>Project 8</h2><img src="/img/test.png" alt="project picture"></div>
           </div>
-          
-          
+
         </div>
         
       </section>
@@ -161,30 +160,4 @@
       <p>Copyright @ 2021 Emil åberg</p>
     </footer>
   </body>
-
-  <script>
-    function myFunction(){
-      var x = document.getElementById("links");
-      
-      if (x.style.display === "block"){
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-
-    document.querySelectorAll("#links").forEach(item =>{
-      item.addEventListener("click", event =>{
-        close();
-      })
-
-    })
-    function close(){
-      var x = document.getElementById("links");
-      x.style.display = "none";
-    }
-
-
-    
-  </script>
 </html>
