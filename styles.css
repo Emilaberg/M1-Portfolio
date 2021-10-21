@@ -247,7 +247,7 @@ i {
 /* Work page */
 
 .pro-page {
-  margin: 10% 16%;
+  /* margin: 10% 16%; */
 }
 
 .pro-page h1 {
@@ -260,13 +260,13 @@ i {
   box-shadow: 2px 2px 10px;
 }
 
-.pro-container {
+/* .pro-container {
   display: flex;
   flex-direction: row;
   background-color: #e4ecf5;
   border-radius: 33px;
   box-shadow: 2px 2px 10px;
-}
+} 
 
 .pro-row {
   display: flex;
@@ -291,6 +291,27 @@ i {
 
 .pro-item div img {
   width: 50%;
+} */
+
+.pro-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* gap: 200px; */
+}
+.pro-container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.pro-container img{
+  margin: 10px;
+  width: 7rem;
+}
+
+.pro-col div{
+  margin: 10px;
 }
 
 /* footer styling */
