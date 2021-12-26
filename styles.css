@@ -134,9 +134,8 @@ nav div a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e4ecf5;
+  background-color: #e2e8f0;
   border-radius: 33px;
-  box-shadow: grey 2px 2px 10px;
 }
 
 .about-row {
@@ -160,7 +159,6 @@ nav div a {
   padding: 20px 40px 20px 40px;
   margin: 20px;
   border-radius: 18px;
-  box-shadow: 2px 2px 10px;
   position: relative;
 }
 #about{
@@ -198,9 +196,8 @@ nav div a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e4ecf5;
+  background-color: #e2e8f0;
   border-radius: 33px;
-  box-shadow: 2px 2px 10px gray;
 }
 
 .exp-row {
@@ -220,7 +217,6 @@ nav div a {
   padding: 20px 40px 20px 40px;
   margin: 20px;
   border-radius: 18px;
-  box-shadow: 2px 2px 10px;
   background-color: #e2e8f0;
   position: relative;
 }
@@ -247,7 +243,7 @@ i {
 /* Work page */
 
 .pro-page {
-  /* margin: 10% 16%; */
+  margin: 10% 16%;
 }
 
 .pro-page h1 {
@@ -257,15 +253,13 @@ i {
   padding: 20px 40px 20px 40px;
   margin: 20px;
   border-radius: 18px;
-  box-shadow: 2px 2px 10px;
 }
 
-/* .pro-container {
+.pro-container {
   display: flex;
   flex-direction: row;
-  background-color: #e4ecf5;
+  background-color: #e2e8f0;
   border-radius: 33px;
-  box-shadow: 2px 2px 10px;
 } 
 
 .pro-row {
@@ -289,16 +283,16 @@ i {
   width: 50%;
 }
 
-.pro-item div img {
+.pro-item div a img {
   width: 50%;
-} */
+}
 
-.pro-container{
+/* .pro-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* gap: 200px; */
+  gap: 200px;
 }
 .pro-container div{
   display: flex;
@@ -312,7 +306,7 @@ i {
 
 .pro-col div{
   margin: 10px;
-}
+} */
 
 /* footer styling */
 
