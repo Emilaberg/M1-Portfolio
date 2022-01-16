@@ -1,0 +1,212 @@
+@import url("https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #e2e8f0;
+}
+
+/* Front page-->about page */
+h1,
+h3 {
+  font-weight: normal;
+}
+
+/* navigational bar */
+.navbar {
+  /* position: fixed; */
+  /* width: 100%; */
+  background-color: #445d7c;
+  z-index: 2;
+
+  text-shadow: 1px 1px black;
+}
+
+nav div {
+  list-style-type: none;
+}
+
+nav div a {
+  display: inline-block;
+  margin: 10px 40px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+  color: #e2e8f0;
+  font-family: "Libre Baskerville", serif;
+}
+
+.navbar-right {
+  float: right;
+}
+/* navigational bar */
+
+/* burgermenu */
+#links a {
+  display: none;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 4vw;
+  margin: 0px;
+  padding: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.brand .icon {
+  display: none;
+}
+
+/* footer styling */
+footer {
+  display: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #445d7c;
+}
+
+footer p {
+  color: #e2e8f0;
+  text-align: center;
+}
+
+/* navbar decoration */
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.about-me {
+  text-align: center;
+  min-height: 90vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-row {
+  display: flex;
+}
+.about-item {
+  padding: 25px;
+  flex-basis: 100%;
+}
+
+.about-me h1 {
+  color: #565c5e;
+  font-size: 3em;
+  padding: 20px 40px 20px 40px;
+  margin: 20px;
+}
+
+.about-item img {
+  border-radius: 100%;
+  max-width: 100%;
+}
+
+.about-item p {
+  color: #565c5e;
+  word-spacing: 5px;
+  font-size: 16px;
+  padding: 2%;
+}
+
+.about-item h3 {
+  padding: 5px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.experience div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #211f20;
+  width: 100%;
+  color: #f1ffff;
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* .burgermenu:hover {
+  background-color: #597aa2;
+} */
+
+/* Media queries */
+/* iphone and smaller */
+@media screen and (max-width: 1070px) {
+  .navbar-left a {
+    margin: 10px 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .brand-name {
+    font-size: 80%;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+  
+  .about-me h1 {
+    color: #565c5e;
+    font-size: 4vw;
+    padding: 5% 10% 5% 10%;
+    margin: 5%;
+  }
+
+  .about-item img {
+    width: 60%;
+  }
+  .about-row {
+    flex-direction: column;
+  }
+
+  #links a {
+    display: block;
+  }
+
+  .brand .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    margin: 15px;
+    padding: 1px 10px 1px 10px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .about-me {
+    
+  }
+
+  
+}
