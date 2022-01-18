@@ -7,38 +7,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <meta samesite=None>
     <!-- The website title -->
     <title>Portfolio</title>
   </head>
   <body onload="close()">
-
-    
+    <header id="home">
+      <!--the navigationbar-->
+      <nav class="navbar">
+        <div class="brand">
+          <a href="" class="brand-name">いらっしゃいませ</a>
+          <div class="navbar-right">
+            <a href="/">Portfolio</a>
+            <a href="/about.html">About</a>
+            <a href="/Contact.html">Contact</a>
+          </div>
+          <!-- burgermenu -->
+          <ul id="links">
+            <a href="/" id="_home">Portfolio</a>
+            <a href="/about.html">About</a>
+            <a href="/Contact.html">Contact</a>
+          </ul>
+          <a class="icon" onclick="myFunction()"
+            ><i class="fal fa-angle-down"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
     <!-- the landing page containing navbar and front name, icons-->
     <article class="bg-img">
-      <!-- The header containing the navbar -->
-      <header id="home">
-        <!--the navigationbar-->
-        <nav class="container">
-          <div class="brand">
-            <a href="" class="brand-name">いらっしゃいませ</a>
-            <div class="navbar-left">
-              <a href="/">Portfolio</a>
-              <a href="/about.html">About</a>
-              <a href="/Contact.html">Contact</a>
-            </div>
-            <!-- burgermenu -->
-            <ul id="links">
-              <a href="/" id="_home">Portfolio</a>
-              <a href="/about.html">About</a>
-              <a href="/Contact.html">Contact</a>
-            </ul>
-            <a class="icon" onclick="myFunction()"><i class="fal fa-angle-down"></i></a>
-          </div>
-        </nav>
-      </header>
+      
       <!--the landing page with front name n icons-->
       <section class="home">
         <div class="main-title">

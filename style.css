@@ -19,6 +19,42 @@ h3 {
   font-weight: normal;
 }
 
+.main-title {
+  background-color: #e2e8f0;
+  padding: 20px;
+  border: gray 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #565c5e;
+  opacity: 95%;
+}
+
+.front-name {
+  font-size: 4em;
+  text-align: center;
+}
+.front-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.front-sub h3 {
+  padding: 10px;
+}
+.front-sub h3 a {
+  color: #dfdbd8;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
 /* navigational bar */
 .navbar {
   /* position: fixed; */
@@ -63,25 +99,26 @@ nav div a {
   display: none;
 }
 
-/* footer styling */
-footer {
-  display: absolute;
-  bottom: 0;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #445d7c;
+.bg-img {
+  background-image: url("img/home-img.jpg");
+
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: #565c5e 3px solid;
 }
 
-footer p {
+.front-sub i {
   color: #e2e8f0;
-  text-align: center;
+  padding: 10px 30px 10px 30px;
+  font-size: 35px;
+  transition: color 200ms;
 }
 
-/* navbar decoration */
-.navbar-right a:hover {
-  text-decoration: underline;
-}
+/* About page css */
 
 .about-me {
   text-align: center;
@@ -147,10 +184,41 @@ footer p {
   text-align: center;
 }
 
+.projects{
+  height: 100vh;
+}
 /* .burgermenu:hover {
   background-color: #597aa2;
 } */
 
+
+/* footer styling */
+footer {
+  display: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #445d7c;
+}
+
+footer p {
+  color: #e2e8f0;
+  text-align: center;
+}
+
+/* navbar decoration */
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.front-sub h3 a:hover {
+  position: relative;
+  bottom: 2px;
+}
+.front-sub h3 i:hover {
+  color: lightblue;
+}
 /* Media queries */
 /* iphone and smaller */
 @media screen and (max-width: 1070px) {
