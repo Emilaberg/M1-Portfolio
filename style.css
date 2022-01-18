@@ -185,8 +185,124 @@ nav div a {
 }
 
 .projects{
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.project-header{
+  margin: 5rem;
+  font-size: large;
+}
+
+.project-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 8rem;
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #597aa2;
+  color: #e2e8f0;
+  font-weight: 500;
+  /* height: 16vw; */
+  height: 300px;
+  /* width: 16vw; */
+  width: 300px;
+  margin: 14px;
+  border-radius: 12px;
+}
+
+.cardInfo{
+  font-size: 12px; 
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cardInfo:hover{
+  background-color: #445d7c;
+  cursor: pointer;
+}
+ 
+.Thrilla:hover{
+  color: black;
+  background-color: darkred;
+}
+.M3:hover{
+
+}
+
+.info-card{
+  height: 100%;
+  margin: 1rem;
+}
+
+.info-card div{
+  margin: 5px;
+}
+
+.cardButtons-container{
+  display: flex;
+  gap: 0.5vw;
+  margin-top: 20%
+}
+
+.cardButtons{
+  background-color: #516e92;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.cardButtons:hover{
+  background-color: #445d7c;
+  cursor: pointer;
+}
+
+.overlay{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  transition: .2s ease;
+  opacity: 1;
+  background-color: #597aa2;
+  border-radius: 12px;
+}
+
+
+.overlay img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.project-card:hover .overlay{
+  opacity: 0;
+  z-index: -1;
+}
+.locked{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+}
+
+.locked img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* .overlay:hover{
+  display: none;
+} */
 /* .burgermenu:hover {
   background-color: #597aa2;
 } */

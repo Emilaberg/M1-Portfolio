@@ -1,3 +1,4 @@
+
 function myFunction(){
     var x = document.getElementById("links");
     
@@ -18,3 +19,8 @@ function myFunction(){
     var x = document.getElementById("links");
     x.style.display = "none";
   }
+
+function removeOverlay(x)
+{
+  console.log(x);
+}
