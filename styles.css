@@ -13,6 +13,71 @@ body {
   background-color: #e2e8f0;
 }
 
+
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-header{
+  margin: 5rem;
+  font-size: large;
+}
+
+.project-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 8rem;
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #597aa2;
+  color: #e2e8f0;
+  font-weight: 500;
+  height: 16vw;
+  width: 16vw;
+  margin: 14px;
+  border-radius: 12px;
+}
+
+.cardInfo{
+  font-size: 12px; 
+  background-color: #516e92;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardInfo:hover{
+  background-color: #445d7c;
+  cursor: pointer;
+}
+.project-card div{
+  margin: 1rem;
+}
+
+.cardButtons{
+  background-color: #516e92;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.cardButtons:hover{
+  background-color: #445d7c;
+  cursor: pointer;
+}
+
 /* Front page-->about page */
 h1,
 h3 {
